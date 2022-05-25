@@ -17,16 +17,20 @@ spec:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: Sathwik-Anumala
+    repository: jx3-kubernetes
   - key: staging
   - key: production
   ingress:
-    domain: ""
-    externalDNS: false
+    domain: 192.168.5.15.nip.io
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: Sathwik-Anumala
   repository: bucketrepo
   secretStorage: local
   vault: {}
