@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        Sathwik-Anumala/jenkinsx-http-gradle: true
         Sathwik-Anumala/jenkinsx-http-node: true
         Sathwik-Anumala/jx3-kubernetes: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        Sathwik-Anumala/jenkinsx-http-gradle: merge
         Sathwik-Anumala/jenkinsx-http-node: merge
         Sathwik-Anumala/jx3-kubernetes: merge
       queries:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - Sathwik-Anumala/jx3-kubernetes
+        - Sathwik-Anumala/jenkinsx-http-gradle
         - Sathwik-Anumala/jenkinsx-http-node
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - Sathwik-Anumala/jx3-kubernetes
+        - Sathwik-Anumala/jenkinsx-http-gradle
         - Sathwik-Anumala/jenkinsx-http-node
       target_url: http://lighthouse-jx.192.168.5.15.nip.io/merge/status
 kind: ConfigMap
