@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://bucketrepo-jx.192.168.5.15.nip.io
+releases:
+- chart: dev/jenkinsx-http-node
+  version: 0.0.1
+  name: jenkinsx-http-node
+templates: {}
+renderedvalues: {}
