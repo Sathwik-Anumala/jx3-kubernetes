@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: Sathwik-Anumala
+    provider: github
+    repository: jenkinsx-http-gradle
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: sathwik-anumala-jenkinsx-http-gradle
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/Sathwik-Anumala/jenkinsx-http-gradle.git
+  org: Sathwik-Anumala
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkinsx-http-gradle
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/Sathwik-Anumala/jenkinsx-http-gradle
